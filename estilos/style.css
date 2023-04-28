@@ -1,69 +1,97 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
 
 *{
-    padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 :root{
-    --cor1:#2436FF;
-    --cor2:#121B80;
+    --font1: 'Righteous', cursive;
+    --font2: 'Sarala', sans-serif;
+    --cor1: #0C0F1B;
+    --cor2: #030307;
+    --cor3: #212429;
+    --cor4: #0F1113;
 }
 
 html, body{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 body{
-    background-image: linear-gradient(45deg, #24232f 16.62%, #56528e 85.61%);
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    background-attachment: fixed;
 }
 
 header{
-    color: #ffffff;
-    text-align: center;
+    color: white;
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1));
 }
 
 header > h1{
-    padding-top: 20px;
-    padding-bottom: 10px;
+    font-family: var(--font1);
+    text-align: center;
+    padding: 40px 10px 40px 10px;
 }
 
 header > p{
+    font-family: var(--font2);
     text-align: justify;
-    padding: 0px 6px 10px 6px;
+    padding: 0px 40px 40px 40px;
 }
 
 main{
-    margin: 0px 6px 0px 6px;
-    border: 1px solid white;
-    border-radius: 10px;
+    color: white;
+    font-family: var(--font2);
 }
 
-section{
-    color: white;
-    padding: 10px 6px 10px 6px;
+h2{
+    padding: 20px 0px 10px 20px;
 }
 
 .caixa{
-    height: 200px;
-    border-radius: 10px;
+    max-height: 240px;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: flex;
     overflow-x: auto;
-    background-color: #0000008a;
 }
 
-.conteudo{
-    display: inline-block;
-    height:190px;
-    width: 193px;
-    margin-top: 5px;
-    margin-left: 5px;
-    /*border: 1px solid white;*/
+.caixa::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font2);
+    background-color: #373c44;
+    margin-right: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #24232f 16.62%, #56528e 85.61%);
+    height: 220px;
+    min-width: 220px;
 }
 
-.conteudo > h3{
+a > img{
+    width: 200px;
+    margin: 12px 0px 0px 10px;
+}
+
+a > h3{
     text-align: center;
+}
+
+a > p{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+a > p::after{
+    content: "Read More";
+    text-decoration: underline;
 }
