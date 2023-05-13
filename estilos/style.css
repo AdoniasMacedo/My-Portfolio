@@ -11,7 +11,7 @@
 :root{
     --font1: 'Righteous', cursive;
     --font2: 'Sarala', sans-serif;
-    --cor1: #0C0F1B;
+    --cor1: #121729;
     --cor2: #030307;
     --cor3: #212429;
     --cor4: #0F1113;
@@ -23,7 +23,7 @@ html, body{
 }
 
 body{
-    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    /*background-image: linear-gradient(to top, var(--cor4), var(--cor3));*/
     background-attachment: fixed;
 }
 
@@ -45,7 +45,8 @@ header > p{
 }
 
 main{
-    color: white;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    color: rgb(255, 255, 255);
     font-family: var(--font2);
 }
 
