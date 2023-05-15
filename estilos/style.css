@@ -93,6 +93,7 @@ a > p{
 }
 
 a > p::after{
-    content: "Read More";
+    content: "See More";
+    font-weight: bolder;
     text-decoration: underline;
 }
